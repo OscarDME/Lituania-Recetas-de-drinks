@@ -1,211 +1,211 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// COPY.JS — Fuente única de TODO el texto visible de la landing.
-// Doc §7: cero texto hardcodeado en componentes. Si está en pantalla, está aquí.
+// COPY.JS — Viso matomo nukreipimo puslapio (landing page) teksto šaltinis.
+// Doc §7: Jokių „įsiūtų“ (hardcoded) tekstų komponentuose. Viskas, kas ekrane, yra čia.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const copy = {
-  // ── SEO / METADATA (Layout.astro lo lee) ──────────────────────────────────
+  // ── SEO / METADATA (Skaito Layout.astro) ──────────────────────────────────
   metadata: {
-    lang: 'pt-BR',
-    title: '150 receitas de drinks gourmet',
+    lang: 'lt',
+    title: '150 aukščiausios klasės kokteilių receptų namuose',
     description:
-      'Receitas de drinks prontas para vender — ingredientes simples, produção rápida e margem de lucro alta. Comece a faturar até R$3.000/mês com bônus exclusivos.',
+      'Vakarėliams paruošti kokteilių receptai — paprasti ingredientai, greitas paruošimas. Nustebink draugus, sutaupyk brangiems barams ir tapk vakaro žvaigžde. Įtraukti išskirtiniai bonusai.',
     canonical: 'https://150receitascopao.netlify.app',
     ogImage: '/og-cover.jpg',
     ogType: 'website',
-    siteName: 'MUNDO DOS DRINKS',
+    siteName: 'KOKTEILIŲ PASAULIS',
   },
 
-  // ── 1. TIMER STICKY ARRIBA ────────────────────────────────────────────────
+  // ── 1. TIMER STICKY ANTRAŠTĖ ────────────────────────────────────────────────
   timerBar: {
     icon: '⏰',
-    label: 'Promoção encerra em:',
+    label: 'Pasiūlymas galioja dar:',
     initialMinutes: 9,
     initialSeconds: 57,
   },
 
-  // ── 2. HERO ───────────────────────────────────────────────────────────────
+  // ── 2. HERO (PAGRINDINĖ DALIS) ───────────────────────────────────────────────────────────────
   hero: {
-    tag: '🍋 Oferta Exclusiva',
-    titleHighlight: '150 Receitas de copão Gourmet',
-    titleConnector: 'para Vender',
-    titleHighlightGreen: 'R$3.000',
-    titleEnd: 'Começando do Zero',
-    deliveryLabel: 'Você recebe imediatamente no',
+    tag: '🍋 Išskirtinis pasiūlymas',
+    titleHighlight: '150 Puikių Kokteilių Receptų',
+    titleConnector: 'tavo',
+    titleHighlightGreen: 'Malonumui',
+    titleEnd: 'Net jei niekad neplakei gėrimų',
+    deliveryLabel: 'Gauk prieigą iš karto per',
     deliveryChannels: [
       { label: 'WhatsApp', kind: 'whatsapp' },
-      { label: 'Email', kind: 'email' },
+      { label: 'El. paštą', kind: 'email' },
     ],
-    videoAlt: 'Apresentação do kit 150 receitas de drinks gourmet',
-    ctaLabel: '✅ QUERO GARANTIR MINHAS RECEITAS AGORA',
-    ctaSub: '🔒 Compra 100% segura • Acesso imediato',
+    videoAlt: '150 naminių kokteilių receptų rinkinio pristatymas',
+    ctaLabel: '✅ NORIU SAVO RECEPTŲ DABAR',
+    ctaSub: '🔒 100% saugus pirkimas • Momentinė prieiga',
   },
 
-  // ── 3. BENEFÍCIOS ─────────────────────────────────────────────────────────
+  // ── 3. PRIVALUMAI ─────────────────────────────────────────────────────────
   benefits: {
     intro:
-      'Receitas de drinks prontas para vender — ingredientes simples, produção rápida,',
-    introStrong: 'alto valor percebido e margem de lucro que vai te surpreender!',
+      'Receptai, sukurti maksimaliam malonumui — paprasti ingredientai, greitas paruošimas,',
+    introStrong: 'neįtikėtinas skonis ir vaizdas, kuris nustebins kiekvieną svečią!',
     items: [
-      'Qualquer pessoa consegue fazer',
-      'Sem cozinha profissional ou equipamentos caros',
-      'Receitas prontas, testadas e com custo baixo',
-      'Perfeito para vender no WhatsApp, rua ou delivery',
+      'Gaminti kiekvieną kokteilį be išankstinės barmeno patirties',
+      'Kurti magiją be profesionalios įrangos ar prabangios virtuvės',
+      'Mėgautis išbandytais receptais iš lengvai prieinamų ingredientų',
+      'Tapti kiekvieno namų vakarėlio, išvykos į sodybą ar pasisėdėjimo su draugais žvaigžde',
     ],
-    ctaLabel: '🍹 QUERO GARANTIR MINHAS RECEITAS AGORA',
+    ctaLabel: '🍹 NORIU SAVO RECEPTŲ DABAR',
   },
 
-  // ── 4. CARRUSEL DE RECETAS ────────────────────────────────────────────────
+  // ── 4. RECEPTŲ KARUSELĖ ────────────────────────────────────────────────
   carousel: {
-    title: '🍹 Algumas das receitas que você irá',
-    titleHighlight: 'aprender e lucrar!',
+    title: '🍹 Dalis receptų, kuriais',
+    titleHighlight: 'mėgausiesi su draugais!',
     slides: [
-      { caption: 'Copão Beijo Doce', alt: 'Drink Copão Beijo Doce' },
+      { caption: 'Saldus bučinys', alt: 'Kokteilis Saldus bučinys' },
       {
-        caption: 'Espanhola de Vinho c/ Maracujá',
-        alt: 'Drink Espanhola de Vinho com Maracujá',
+        caption: 'Ispaniškas vynas su pasifloromis',
+        alt: 'Kokteilis Ispaniškas vynas su pasifloromis',
       },
-      { caption: 'MaracuBeats Cremosa', alt: 'Drink MaracuBeats Cremosa' },
-      { caption: 'Batida de Bala Halls', alt: 'Drink Batida de Bala Halls' },
-      { caption: 'Drink do Verão', alt: 'Drink do Verão' },
+      { caption: 'Kremingas „MarakuBeats“', alt: 'Kokteilis Kremingas MarakuBeats' },
+      { caption: 'Kokteilis su „Halls“ saldainiais', alt: 'Kokteilis su Halls saldainiais' },
+      { caption: 'Vasaros brizas', alt: 'Kokteilis Vasaros brizas' },
       {
-        caption: 'Caipirinha de Maracujá c/ Café',
-        alt: 'Drink Caipirinha de Maracujá com Café',
+        caption: 'Kaipirinja su pasifloromis ir kava',
+        alt: 'Kokteilis Kaipirinja su pasifloromis ir kava',
       },
     ],
-    prevLabel: 'Slide anterior',
-    nextLabel: 'Próximo slide',
-    dotLabel: 'Ir para o slide',
+    prevLabel: 'Ankstesnė skaidrė',
+    nextLabel: 'Kita skaidrė',
+    dotLabel: 'Į skaidrę',
   },
 
-  // ── 5. BÔNUS ──────────────────────────────────────────────────────────────
+  // ── 5. BONUSAI ──────────────────────────────────────────────────────────────
   bonuses: {
-    title: '🎁 E ainda tem',
-    titleHighlight: 'BÔNUS!',
+    title: '🎁 Ir, žinoma, tavęs laukia',
+    titleHighlight: 'DOVANOS!',
     items: [
       {
-        tag: 'Bônus 1',
-        title: '50 Receitas Alcoólicas de Batidas na Garrafa',
-        description: 'Receitas prontas para vender, sem os bônus exclusivos.',
-        alt: '50 Receitas Alcoólicas de Batidas na Garrafa',
+        tag: '1 Dovana',
+        title: '50 alkoholinių šotų ir punšų receptų',
+        description: 'Tobuli vakarėlio gėrimai, kuriuos greitai paruoši ir pasidalinsi su visa kompanija.',
+        alt: '50 alkoholinių šotų ir punšų receptų',
       },
       {
-        tag: 'Bônus 2',
-        title: 'Tabela de Precificação — Quanto Cobrar em Cada Receita',
+        tag: '2 Dovana',
+        title: 'Išmanus pirkinių sąrašas — kaip sutaupyti',
         description:
-          'Saiba exatamente quanto cobrar para lucrar de verdade em cada drink que vender.',
-        alt: 'Tabela de Precificação dos drinks',
+          'Sužinok, kokius tiksliai ingredientus pirkti, norint sukurti „premium“ kokteilius ir nepalikti pusės algos brangiuose baruose.',
+        alt: 'Pirkinių sąrašas ir skaičiuoklė',
       },
       {
-        tag: 'Bônus 3',
-        title: '✅ Roteiro Pronto: Como Anunciar no WhatsApp e Fechar Vendas',
-        description: 'Scripts prontos para você copiar, colar e já começar a vender.',
-        alt: 'Roteiro de vendas pelo WhatsApp',
+        tag: '3 Dovana',
+        title: '✅ Gidas: Kaip suorganizuoti tobulą kokteilių vakarą',
+        description: 'Praktinės idėjos ir žingsniai, kaip sukurti nepamirštamą patirtį ir priblokšti svečius.',
+        alt: 'Namų vakarėlio vadovas',
       },
       {
-        tag: 'Bônus 4',
-        title: 'Videoaula: Como Embalar e Apresentar para Vender Mais',
+        tag: '4 Dovana',
+        title: 'Vaizdo pamoka: Kaip papuošti ir patiekti kaip profesionalui',
         description:
-          'Aprenda a deixar seus produtos irresistíveis e cobrar mais caro por isso.',
-        alt: 'Videoaula sobre embalagem e apresentação',
+          'Išmok gražaus pateikimo paslapčių, kurios paprastą gėrimą pavers 5 žvaigždučių šedevru.',
+        alt: 'Vaizdo pamoka apie kokteilių dekoravimą',
       },
     ],
   },
 
-  // ── 6. PREÇO ──────────────────────────────────────────────────────────────
+  // ── 6. KAINOS ──────────────────────────────────────────────────────────────
   pricing: {
-    sectionId: 'precos',
-    title: 'Escolha como quer começar hoje:',
+    sectionId: 'kainos',
+    title: 'Išsirink, kaip nori pradėti šiandien:',
     complete: {
-      badge: '⭐ Mais Vendido',
-      title: 'Kit Completo +150 Receitas de Drinks',
-      descriptionLead: '+150 receitas de drinks na garrafa prontas para vender + todos os',
-      descriptionStrong: 'bônus exclusivos',
-      descriptionTail: 'para você faturar até R$3.000/mês.',
-      mockupAlt: 'Mockup do Kit 150 Receitas de Copão Gourmet',
-      includesLabel: '🎁 Inclui todos os bônus:',
+      badge: '⭐ Populiariausias',
+      title: 'Pilnas Paketas: 150+ Kokteilių Receptų',
+      descriptionLead: '150+ nuostabių naminių kokteilių receptų + visos',
+      descriptionStrong: 'išskirtinės dovanos,',
+      descriptionTail: 'kad taptum geriausiu namų barmenu.',
+      mockupAlt: 'Pilno paketo su 150 receptų vizualizacija',
+      includesLabel: '🎁 Įeina visos dovanos:',
       items: [
-        '+150 receitas de drinks gourmet',
-        'Lista de fornecedores baratos para garrefinhas',
-        'Tabela de precificação — todos os drinks',
-        'Roteiro de vendas pelo WhatsApp',
-        'Videoaula: como embalar e vender mais',
+        '150+ aukščiausios klasės kokteilių receptų',
+        'Pigios alternatyvos brangiems alkoholiniams gėrimams',
+        'Išmanus pirkinių sąrašo gidas',
+        'Tobulo namų vakarėlio vadovas',
+        'Vaizdo pamoka apie profesionalų puošimą',
       ],
-      strikePrice: 'De R$59,90',
-      price: 'R$24,90',
-      priceNote: 'acesso imediato',
-      ctaLabel: '🛒 QUERO O KIT COMPLETO',
-      footer: '✅ Acesso imediato · E-mail + WhatsApp · Garantia de 7 dias',
+      strikePrice: 'Nuo 29.90 €',
+      price: '8.90 €',
+      priceNote: 'momentinė prieiga',
+      ctaLabel: '🛒 NORIU PILNO PAKETO',
+      footer: '✅ Momentinė prieiga · El. paštas + WhatsApp · 14 dienų garantija',
     },
   },
 
-  // ── 7. GARANTIA ───────────────────────────────────────────────────────────
+  // ── 7. GARANTIJA ───────────────────────────────────────────────────────────
   guarantee: {
     icon: '🛡️',
-    title: 'Garantia de 7 dias',
+    title: '14 dienų visiška garantija',
     description:
-      'Se por qualquer motivo você não gostar, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.',
+      'Jei dėl kokios nors priežasties liksi nesužavėtas, grąžinsime pinigus iki paskutinio cento. Jokių klausimų ir jokio streso.',
   },
 
-  // ── 8. FAQ ────────────────────────────────────────────────────────────────
+  // ── 8. DUK (Dažniausiai užduodami klausimai) ────────────────────────────────────────────────
   faq: {
-    title: 'Dúvidas',
-    titleHighlight: 'frequentes:',
+    title: 'Dažniausiai užduodami',
+    titleHighlight: 'klausimai:',
     items: [
       {
-        q: 'Preciso saber cozinhar para comprar?',
-        a: 'Não! As receitas são simples e qualquer pessoa consegue fazer, mesmo sem experiência na cozinha.',
+        q: 'Ar man reikia turėti patirties, norint juos pagaminti?',
+        a: 'Griežtai ne! Receptai paaiškinti taip paprastai, kad juos paruoš bet kas, net jei gyvenime nesi plakęs jokio kokteilio.',
       },
       {
-        q: 'Preciso de equipamentos caros ou cozinha profissional?',
-        a: 'Não precisa. Tudo pode ser feito em casa com utensílios simples que você provavelmente já tem.',
+        q: 'Ar man reikės brangių plaktuvų ir profesionalios įrangos?',
+        a: 'Nereikės. Viską gali pasidaryti namuose naudodamas įprastus virtuvės įrankius, kuriuos jau turi.',
       },
       {
-        q: 'Onde vou vender os drinks?',
-        a: 'Você pode vender no WhatsApp, nas redes sociais, em festas, por delivery ou até na rua. O bônus 3 te ensina exatamente como fazer isso.',
+        q: 'Kokioms progoms tinka šie kokteiliai?',
+        a: 'Visoms! Nuo atsipalaidavimo po sunkios darbo dienos, romantiškos vakarienės, iki pašėlusio namų vakarėlio ar savaitgalio sodyboje.',
       },
       {
-        q: 'Quanto posso cobrar por cada garrafa?',
-        a: 'Com a tabela de precificação incluída, você vai saber exatamente quanto cobrar para ter uma margem de lucro alta em cada venda.',
+        q: 'Ar ingredientai yra brangūs?',
+        a: 'Ne. Su mūsų išmaniu pirkinių sąrašu išmoksi išgauti „premium“ skonį su prieinamais produktais iš artimiausio prekybos centro.',
       },
       {
-        q: 'Como recebo após a compra?',
-        a: 'O acesso é imediato! Você recebe no e-mail e no WhatsApp assim que o pagamento for confirmado.',
+        q: 'Kaip gausiu prieigą po apmokėjimo?',
+        a: 'Prieiga suteikiama iškart! Kai tik praeis mokėjimas, viską gausi tiesiai į savo el. paštą ir „WhatsApp“.',
       },
       {
-        q: 'Tenho garantia se não gostar?',
-        a: 'Sim! Você tem 7 dias de garantia total. Se não gostar por qualquer motivo, devolvemos 100% do valor pago.',
+        q: 'Ar yra garantija, jei man nepatiks?',
+        a: 'Žinoma! Turi net 14 dienų visišką garantiją. Jei nebūsi patenkintas, grąžinsime 100% pinigų.',
       },
     ],
   },
 
-  // ── 9. URGÊNCIA ──────────────────────────────────────────────────────────
+  // ── 9. SKUBUMAS ──────────────────────────────────────────────────────────
   urgency: {
-    text: '⏰ Não fique esperando — cada dia sem vender é dinheiro perdido!',
+    text: '⏰ Neatidėliok — savaitgalis artėja, o su juo ir dar vienas nuobodus vakaras. Pakeisk tai jau dabar!',
   },
 
-  // ── 10. CTA FINAL ─────────────────────────────────────────────────────────
+  // ── 10. FINALINIS CTA (KVIETIMAS VEIKTI) ─────────────────────────────────────────────────────────
   finalCta: {
-    ctaLabel: '🍹 QUERO ACESSO ÀS 150 RECEITAS AGORA',
-    subText: '🔒 Acesso imediato • Garantia de 7 dias • Pagamento seguro',
+    ctaLabel: '🍹 NORIU PRIEIGOS PRIE 150 RECEPTŲ DABAR',
+    subText: '🔒 Momentinė prieiga • 14 dienų garantija • Saugus mokėjimas',
   },
 
-  // ── 11. SEGURIDAD (badges) ────────────────────────────────────────────────
+  // ── 11. SAUGUMAS (ženkliukai) ────────────────────────────────────────────────
   security: {
     items: [
-      { icon: '🔒', label: 'SSL Seguro' },
-      { icon: '💳', label: 'Pagamento Protegido' },
-      { icon: '📲', label: 'Acesso Imediato' },
+      { icon: '🔒', label: 'SSL Apsauga' },
+      { icon: '💳', label: 'Saugus mokėjimas' },
+      { icon: '📲', label: 'Momentinė prieiga' },
     ],
   },
 
-  // ── 12. FOOTER ────────────────────────────────────────────────────────────
+  // ── 12. FOOTER (PORAŠTĖ) ────────────────────────────────────────────────────────────
   footer: {
-    text: '© 2026 · MUNDO DOS DRINKS · Todos os direitos reservados',
+    text: '© 2026 · KOKTEILIŲ PASAULIS · Visos teisės saugomos',
   },
 
-  // ── A11Y / texto auxiliar (no visible "directamente" pero usado en aria) ──
+  // ── A11Y / pagalbinis tekstas ──
   a11y: {
-    skipToContent: 'Ir para o conteúdo principal',
+    skipToContent: 'Pereiti prie pagrindinio turinio',
   },
 };
